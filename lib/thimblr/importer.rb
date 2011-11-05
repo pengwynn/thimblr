@@ -51,7 +51,6 @@ module Thimblr
           rescue
           end
         when "Quote"
-          puts xpost.search("quote-text").inspect
           post['Quote'] = xpost.search("quote-text")[0].content
         when "Video"
           post['Player'] = xpost.search("video-player")[0].content
